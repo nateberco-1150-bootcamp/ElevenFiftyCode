@@ -1,31 +1,83 @@
 html {
-  background-color: rgb(238, 209, 209);
 }
 
 body {
   font-family: lato;
-  display: flex;
 }
 
 .topBar {
-  justify-items: center;
+  background-color: rgb(230, 196, 205);
+  margin-top: 2vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border: none;
+  border-radius: 20px;
+}
+
+.header {
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  font-size: 40px;
+}
+
+.subHeader {
+  color: black;
+  text-align: center;
+  padding-bottom: 1%;
+  font-size: 20px;
 }
 
 .note {
   font-size: 10px;
 }
 
-.countryResultsSection {
-  position: relative;
-  padding: 5vh 5vw;
+h1 {
+  text-align: center;
+  font-size: 30px;
 }
 
-.countryTotals {
-  font-size: 10px;
+h2 {
+  font-size: 18px;
+  text-align: center;
 }
 
-.worldTotals {
-  position: relative;
+h3 {
+  font-size: 13px;
+}
 
-  font-size: 10px;
+#worldContainer {
+  display: flex;
+  justify-content: center;
+  background-color: honeydew;
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  height: 60vh;
+}
+
+.countryTotalHeader {
+}
+
+#countryContainer {
+  position: absolute;
+  right: 5vw;
+  width: 60vw;
+  background-color: rgb(222, 220, 255);
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  height: 60vh;
+}
+
+.searchForm {
+  position: relative;
+  text-align: center;
+}
+
+.countryCards {
+  display: flex;
+  justify-content: center;
 }

@@ -23,23 +23,23 @@ fetch(url)
 function displayWorldTotals(world){
     //Global Deaths (Total)
     let worldTotalDeaths = document.querySelector('.worldTotalDeaths')
-    worldTotalDeaths.innerText = "Total Deaths: " + world.Global.TotalDeaths
+    worldTotalDeaths.innerText = "Deaths: " + world.Global.TotalDeaths
     //Global Confirmed (Total)
     let worldTotalConfirmed = document.querySelector('.worldTotalConfirmed')
-    worldTotalConfirmed.innerText = "Total Confirmed Cases: " + world.Global.TotalConfirmed
+    worldTotalConfirmed.innerText = "Confirmed Cases: " + world.Global.TotalConfirmed
     //Global Recovered (Total)
     let worldTotalRecovered = document.querySelector('.worldTotalRecovered')
-    worldTotalRecovered.innerText = "Total Recovered Cases: " + world.Global.TotalRecovered
+    worldTotalRecovered.innerText = "Recovered Cases: " + world.Global.TotalRecovered
 
     //Global Deaths (New)
     let worldNewDeaths = document.querySelector('.worldNewDeaths')
-    worldNewDeaths.innerText = "Total Deaths: " + world.Global.NewDeaths
+    worldNewDeaths.innerText = "Deaths: " + world.Global.NewDeaths
     //Global Confirmed (New)
     let worldNewConfirmed = document.querySelector('.worldNewConfirmed')
-    worldNewConfirmed.innerText = "New Confirmed Cases: " + world.Global.NewConfirmed
+    worldNewConfirmed.innerText = "Confirmed Cases: " + world.Global.NewConfirmed
     //Global Recovered (New)
     let worldNewRecovered = document.querySelector('.worldNewRecovered')
-    worldNewRecovered.innerText = "New Recovered Cases: " + world.Global.NewRecovered
+    worldNewRecovered.innerText = "Recovered Cases: " + world.Global.NewRecovered
 
 }
 
@@ -83,19 +83,8 @@ function displayCountryTotals(e){
 
 }
 
+countries.style.display = none;
 
-
-
-
-
-
-
-// let world = document.getElementsByClassName("worldTotal")
-// world.innerText = worldTotal.Global.NewConfirmed
-
-
-
-// if (searchCountry.value === )
 
 
 

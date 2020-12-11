@@ -4,57 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid 19 Update</title>
+    <!--Bootstrap CSS Link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!--Internal CSS Link-->
     <link rel="stylesheet" href="apiproject.css" />
   </head>
   <body>
-    <div class="topBar">
-      <h1 class="header">Covid 19 Case Totals & Daily Update</h1>
+    <!--TopBar-->
 
+    <nav class="topBar">
+      <p class="header">COVID-19 Case Totals</p>
+      <p class="subHeader">
+        World & Country-Specific Statistics, Updated Daily
+      </p>
+    </nav>
+    <!--EndTopBar-->
+
+    <div class="container">
+      <div class="row">
+        <!--StartWorld-->
+        <div class="col-4" id="worldContainer">
+          <div class="worldResultsSection">
+            <div class="worldTotals">
+              <h1>World Totals</h1>
+              <br />
+              <div class="card" style="width: 18rem">
+                <div class="card-header">
+                  <h2>Total Cases (all-time)</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h3 class="worldTotalDeaths"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="worldTotalConfirmed"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="worldTotalRecovered"></h3>
+                  </li>
+                </ul>
+              </div>
+
+              <br />
+
+              <div class="card" style="width: 18rem">
+                <div class="card-header">
+                  <h2>New Today</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h3 class="worldNewDeaths"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="worldNewConfirmed"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="worldNewRecovered"></h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--EndWorld lol-->
+
+        <!--StartCountry-->
+        <div class="col-6" style="float: right" id="countryContainer">
+          <div class="countryResultsSection">
+            <div class="searchForm">
+              <!--Search Form-->
+              <h1 class="countryTotalHeader">Country Totals</h1>
+              <br />
+              <form>
+                <p id="searchBar">
+                  <label for="searchCountry">Country: </label>
+                  <input type="text" id="search" class="search" required />
+                  <button class="submit">Submit search</button>
+                </p>
+              </form>
+              <p class="note">
+                (Note: Searches are case sensitive: i.e. Guatemala, United
+                States of America)
+              </p>
+            </div>
+            <!--StartCountryCards-->
+            <br />
+            <div class="countryCards">
+              <div class="card" style="width: 18rem">
+                <div class="card-header"><h2>Total Cases (all-time)</h2></div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h3 class="countryTotalDeaths"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="countryTotalConfirmed"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="countryTotalRecovered"></h3>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <div class="card-header">
+                  <h2>New Today</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h3 class="countryNewDeaths"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="countryNewConfirmed"></h3>
+                  </li>
+                  <li class="list-group-item">
+                    <h3 class="countryNewRecovered"></h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--EndCOuntryCards-->
+          </div>
+        </div>
+
+        <!--EndCountry-->
+      </div>
     </div>
 
-
-
-    <div class="countryResultsSection">
-      <div class="searchForm">
-        <!--Search Form-->
-        <form>
-          <p>
-            <p class="note">(Note: Searches are case sensitive)</p>
-            <p class="note">(i.e. Guatemala, United States of America)</p>
-            <label for="searchCountry">Country: </label>
-            <input type="text" id="search" class="search" required />
-            <button class="submit">Submit search</button>
-          </p>
-        </form>
-      </div>
-      <div class="countryTotals">
-        <h1>Country Totals: All-Time</h1>
-        <h2 class="countryTotalDeaths"></h2>
-        <h2 class="countryTotalConfirmed"></h2>
-        <h2 class="countryTotalRecovered"></h2>
-        <br />
-        <h1>Country Totals: New Today</h1>
-        <h2 class="countryNewDeaths"></h2>
-        <h2 class="countryNewConfirmed"></h2>
-        <h2 class="countryNewRecovered"></h2>
-      </div>
-    </div>
-
-    <div class="worldResultsSection">
-      <div class="worldTotals">
-        <h1>World Totals</h1>
-        <h2>All-Time</h2>
-        <h3 class="worldTotalDeaths"></h3>
-        <h3 class="worldTotalConfirmed"></h3>
-        <h3 class="worldTotalRecovered"></h3>
-        <br />
-        <h2>New Today</h2>
-        <h3 class="worldNewDeaths"></h3>
-        <h3 class="worldNewConfirmed"></h3>
-        <h3 class="worldNewRecovered"></h3>
-      </div>
-    </div>
-
+    <!--Internal Javascript Link-->
     <script type="text/javascript" src="apiproject.js"></script>
+    <!--Bootstrap Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
