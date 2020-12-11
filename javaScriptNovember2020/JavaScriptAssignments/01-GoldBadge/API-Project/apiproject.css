@@ -1,0 +1,31 @@
+html {
+  background-color: rgb(238, 209, 209);
+}
+
+body {
+  font-family: lato;
+  display: flex;
+}
+
+.topBar {
+  justify-items: center;
+}
+
+.note {
+  font-size: 10px;
+}
+
+.countryResultsSection {
+  position: relative;
+  padding: 5vh 5vw;
+}
+
+.countryTotals {
+  font-size: 10px;
+}
+
+.worldTotals {
+  position: relative;
+
+  font-size: 10px;
+}

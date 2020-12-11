@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid 19 Update</title>
+    <link rel="stylesheet" href="apiproject.css" />
+  </head>
+  <body>
+    <div class="topBar">
+      <h1 class="header">Covid 19 Case Totals & Daily Update</h1>
+
+    </div>
+
+
+
+    <div class="countryResultsSection">
+      <div class="searchForm">
+        <!--Search Form-->
+        <form>
+          <p>
+            <p class="note">(Note: Searches are case sensitive)</p>
+            <p class="note">(i.e. Guatemala, United States of America)</p>
+            <label for="searchCountry">Country: </label>
+            <input type="text" id="search" class="search" required />
+            <button class="submit">Submit search</button>
+          </p>
+        </form>
+      </div>
+      <div class="countryTotals">
+        <h1>Country Totals: All-Time</h1>
+        <h2 class="countryTotalDeaths"></h2>
+        <h2 class="countryTotalConfirmed"></h2>
+        <h2 class="countryTotalRecovered"></h2>
+        <br />
+        <h1>Country Totals: New Today</h1>
+        <h2 class="countryNewDeaths"></h2>
+        <h2 class="countryNewConfirmed"></h2>
+        <h2 class="countryNewRecovered"></h2>
+      </div>
+    </div>
+
+    <div class="worldResultsSection">
+      <div class="worldTotals">
+        <h1>World Totals</h1>
+        <h2>All-Time</h2>
+        <h3 class="worldTotalDeaths"></h3>
+        <h3 class="worldTotalConfirmed"></h3>
+        <h3 class="worldTotalRecovered"></h3>
+        <br />
+        <h2>New Today</h2>
+        <h3 class="worldNewDeaths"></h3>
+        <h3 class="worldNewConfirmed"></h3>
+        <h3 class="worldNewRecovered"></h3>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="apiproject.js"></script>
+  </body>
+</html>
